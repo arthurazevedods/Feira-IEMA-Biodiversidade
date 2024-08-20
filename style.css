@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #606c38;
+
+}
+
+nav {
+    width: 100vw;
+    height: 3rem;
+    background-color: #283618;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    padding: 0 5rem;
+    gap: 30px;
+    list-style-type: none;
+    color: #fefae0;
+    font-size: 28px;
+}
+
+li {
+    text-transform: lowercase;
+    transition: 2s;
+}
+
+li:hover {
+    text-transform: uppercase;
+
+}
+
+.banner {
+    position: relative;
+    display: inline-block;
+    /* Para que o texto fique relativo à imagem */
+}
+
+.banner img {
+    object-fit: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+h2 {
+
+    position: absolute;
+    top: 50%;
+    /* Posiciona o texto verticalmente */
+    left: 50%;
+    /* Posiciona o texto horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Centraliza o texto */
+    color: #fefae0;
+    /* Cor do texto */
+    font-size: 45px;
+    /* Tamanho do texto */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Adiciona uma sombra para destacar o texto */
+
+    padding: 10px 30px;
+    background-color: #283618;
+    border-radius: 10px;
+
+}
+
+
+/*Cards que giram*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #277da1;
+    width: 240px;
+    color: #DFDBE5;
+    padding: 10px 5px;
+    border-radius: 15px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 240px;
+    height: 350px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    margin-top: 1em;
+}
+
+.word,
+.traducao {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.card-language {
+    font-size: 0.8em;
+}
+
+.msg-card-front {
+
+    font-size: 0.8em;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid #577590;
+    border-radius: 1rem;
+}
+
+.flip-card-front {
+    background-color: #dda15e;
+
+    color: #fefae0;
+}
+
+.flip-card-back {
+    background-color: #fefae0;
+ 
+
+    color: #606c38;
+    transform: rotateY(180deg);
+}
+
+.word .traducao {
+    text-transform: uppercase;
+}
+
+.cards {
+    width: 90%;
+    padding: 30px 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
+}
+
+.section-title{
+    font-size: 36px;
+    color: #DFDBE5;
+}
+
+.ods-section {
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.ods-section span {
+    font-size: 1rem;
+    color: #DFDBE5;
+}
+
+.ods-section-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    background-color: #fefae0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 5rem;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+}
+
+.text-footer {
+    color: #283618;
+    display: block;
+    padding: 10px 2px;
+
+}
+
+.copyright {
+    padding: 10px 2px;
+    color: #FFFFFF;
+    font-size: 13px;
+}
