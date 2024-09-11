@@ -10,30 +10,70 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
 </head>
 
 <body>
 
-    <nav>
-        <ul>
-            <li>Início</li>
-            <li>Sementes</li>
-            <li>ODS</li>
-            <li>Quem somos nós</li>
-        </ul>
+    <nav class="nav navbar navbar-expand-lg" >
+        <div class="container-fluid">
+            <a class="navbar-brand text-light paytone" href="#">Turma 201</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light  paytone" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light paytone" href="#apresentacao">Apresentação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light paytone" href="#sementes">Sementes</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link text-light paytone" href="#ods">ODS</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <section class="banner">
-        <img src="assets/banner.jpg" alt="">
-        <h2>
-            SEMENTES E BLÁ BLÁ BLÁ
-        </h2>
+        <img src="assets/banner-feira4.png" alt="">
 
     </section>
 
-    <br>
-
-    <section>
+    <section class="container mb-5" style="background-color: #D4E9E2;" id="apresentacao">
+        <div class="py-4 container d-flex flex-column" style="background-color: #D4E9E2; color: #1E3932; min-height: 70vh;">
+            <h2 class="paytone h2">Apresentação</h2>
+            <br />
+            <p class="h4">O projeto busca catalogar e compartilhar sementes nativas dos biomas
+                brasileiros, unindo tecnologia de ponta ao saber tradicional das comunidades
+                locais. Essas comunidades possuem um conhecimento valioso sobre a coleta,
+                o cultivo e o uso de plantas nativas, como a jaca, o jambo, o cacau e a juçara,
+                que desempenham papéis importantes tanto para a biodiversidade quanto para
+                a economia local</p>
+            <br />
+            <p class="h4">O Banco de Sementes Virtual é, portanto, uma ferramenta essencial para unir
+                tecnologia e conhecimentos tradicionais em prol da sustentabilidade. Através
+                da preservação de sementes nativas e da promoção de práticas agrícolas mais
+                responsáveis, o projeto contribuirá diretamente para a conservação da
+                biodiversidade brasileira e para o desenvolvimento sustentável das
+                comunidades. Essa iniciativa visa beneficiar tanto as gerações atuais quanto
+                as futuras, garantindo um equilíbrio entre a conservação ambiental e o bemestar social.</p>
+        </div>
+    </section>
+    
+    <section style="background-color: #D4E9E2;" id="sementes">
         <div class="cards">
 
             <div class="container">
@@ -41,14 +81,18 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <p class="card-language">Semente</p>
-                            <p class="word"></p>
+                            <p class="h3 paytone">JACA</p>
+                            <p class="text-italic">Artocarpus heterophyllus</p>
+                            <img src="/assets/jaca1.png" alt="Jaca">
                             <p class="msg-card-front">Passe o mouse para saber mais</p>
                         </div>
                         <div class="flip-card-back">
-                            <p class="card-language">Alguma explicação</p>
-                            <p class="traducao"></p>
-                            <p>Leave Me</p>
+                            <p class="h3">JACA</p>
+                            <p class="CARACTERÍSTICAS"></p>
+                            <ul class="container">
+                                <li>Pode pesar até 50 kg!</li>
+                                <li>Rica em vitaminas, minerais e fibras.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -61,32 +105,17 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <p class="card-language">Semente</p>
-                            <p class="word"></p>
+                            <p class="h3 paytone">JAMBO</p>
+                            <p class="text-italic">Syzygium malaccense</p>
+                            <img src="/assets/jambo1.png" alt="Jambo">
                             <p class="msg-card-front">Passe o mouse para saber mais</p>
                         </div>
                         <div class="flip-card-back">
-                            <p class="card-language">Alguma explicação</p>
-                            <p class="traducao"></p>
-                            <p>Leave Me</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <p class="card-language">Semente</p>
-                            <p class="word"></p>
-                            <p class="msg-card-front">Passe o mouse para saber mais</p>
-                        </div>
-                        <div class="flip-card-back">
-                            <p class="card-language">Alguma explicação</p>
-                            <p class="traducao"></p>
-                            <p>Leave Me</p>
+                            <p class="h3">JAMBO</p>
+                            <p class="CARACTERÍSTICAS"></p>
+                            <ul class="container">
+                                <li>Benefícios para a saúde: Auxilia o sistema imunológico e a digestão.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -99,14 +128,40 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <p class="card-language">Semente</p>
-                            <p class="word"></p>
+                            <p class="h3 paytone">JUÇARA</p>
+                            <p class="text-italic">Euterpe edulis</p>
+                            <img src="/assets/juçara.png" alt="Juçara">
                             <p class="msg-card-front">Passe o mouse para saber mais</p>
                         </div>
                         <div class="flip-card-back">
-                            <p class="card-language">Alguma explicação</p>
-                            <p class="traducao"></p>
-                            <p>Leave Me</p>
+                            <p class="h3">JUÇARA</p>
+                            <p class="CARACTERÍSTICAS"></p>
+                            <ul class="container">
+                                <li>Superalimento amazônico: Repleta de nutrientes e antioxidantes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="container">
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="h3 paytone">CACAU</p>
+                            <p>Theobroma cacao</p>
+                            <img src="/assets/cacau1.png" alt="Cacau">
+                            <p class="msg-card-front">Passe o mouse para saber mais</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="h3">CACAU</p>
+                            <p class="CARACTERÍSTICAS"></p>
+                            <ul class="container">
+                                <li>Promove a saúde do coração e melhora o humor.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -118,38 +173,41 @@
 
 
 
-    <br>
+    <section style="background-color: #f2f2f2;" class="py-5" id="ods">
+        <div class="container p-4" style="background-color: #D4E9E2;">
+            <h2 class="paytone h2">Os Objetivos de Desenvolvimento Sustentável no Brasil</h2>
+            <p class="h4">Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza,
+                proteger o
+                meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de
+                prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que
+                possamos
+                atingir a Agenda 2030 no Brasil.</p>
+            <br>
 
-
-    <section class="ods-section">
-        <h3 class="section-title">Os Objetivos de Desenvolvimento Sustentável no Brasil</h3>
-
-        <br>
-
-        <span>
-            Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o
-            meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de
-            prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos
-            atingir a Agenda 2030 no Brasil.
-        </span>
-
-        <br>
-
-        <div class="ods-section-images">
-            <img src="assets/ods3.png" alt="">
-            <img src="assets/ods11.png" alt="">
-            <img src="assets/ods12.png" alt="">
+            <div class="d-flex flex-row">
+                <img src="assets/ods2.png" alt="">
+                <img src="assets/ods11.png" alt="">
+                <img src="assets/ods12.png" alt="">
+                <img src="assets/ods13.png" alt="">
+                <img src="assets/ods15.png" alt="">
+            </div>
         </div>
+
     </section>
-    <footer class="footer">
-        <div class="footer-top">
-            <p class="copyright">&copy; </p>
-            <p class="text-footer">Trabalho desenvolvido pela turma bla bla</p>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start  " style="background-color: #D4E9E2;">
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold" href="https://www.instagram.com/iema_axixa/">IEMA AXIXÁ</a>
         </div>
-        <span class="text-footer">
-            Orientação dos Professores:
-        </span>
+        <!-- Copyright -->
     </footer>
+    <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
