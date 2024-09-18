@@ -25,17 +25,7 @@ nav {
 .nav-color{
     color: #fefae0;
 }
-.banner {
-    position: relative;
-    display: inline-block;
-    /* Para que o texto fique relativo à imagem */
-}
 
-.banner img {
-    object-fit: cover;
-    height: 90vh;
-    width: 100%;
-}
 
 
 /*Cards que giram*/
